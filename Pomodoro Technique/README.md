@@ -18,3 +18,4 @@ You can customize the following parameters in the `pomodoro.py` file:
 - `SESSIONS_BEFORE_LONG_BREAK`: Number of work sessions before a long break (default is 4).
 
 ## Screenshots
+![Screenshot 2023-09-17 080249](https://github.com/SaiNikhil1258/Python-Projects/assets/111006116/12d006b1-5638-42ca-b8d2-525d2e46bf7a)
