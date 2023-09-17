@@ -19,3 +19,5 @@ You can customize the following parameters in the `pomodoro.py` file:
 
 ## Screenshots
 ![Screenshot 2023-09-17 080249](https://github.com/SaiNikhil1258/Python-Projects/assets/111006116/12d006b1-5638-42ca-b8d2-525d2e46bf7a)
+
+
