@@ -1,29 +1,26 @@
 from tkinter import *
 import math
-import pygame
-import os
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 25
+WORK_MIN = 1
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
 timer = None
 
-
-
 # ---------------------------- TIMER RESET ------------------------------- # 
+
 def reset_timer():
     window.after_cancel(timer)
     canvas.itemconfig(timer_text, text="00:00")
     title_label.config(text="Timer")
     check_marks.config(text="")
     global reps
-    reps = 0.
+    reps = 0
 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
@@ -65,11 +62,6 @@ def count_down(count):
         work_sessions = math.floor(reps/2)
         for _ in range(work_sessions):
             marks += "✔"
-            pygame.init()
-            pygame.mixer.init()
-            notification_sound = pygame.mixer.Sound("C:\\Users\\LENOVO\\Desktop\\Nikhil\\100 Days Code\\notification.mp3")
-            notification_sound.play()
-
         check_marks.config(text=marks)
 
 
@@ -100,17 +92,8 @@ check_marks.grid(column=1, row=3)
 
 
 
-pygame.quit()
+
 
 window.mainloop()
-
-
-
-
-
-
-
-
-
 
 
